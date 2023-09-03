@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="YFHXYA.exe" version="1.0.0.0" publicKeyToken="642a583bee0577f2" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Logo.ico" asmv2:publisher="Yujianhao" co.v1:suiteName="YFHXYA" asmv2:product="YFHXYA" asmv2:supportUrl="http://www.yfhxya.top/" xmlns="urn:schemas-microsoft-com:asm.v1"># YFHXYA-凤凰学业
+#### 介绍
+{**以下是 YFHXYA 平台说明简介**
+企业项目请看 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)}
+
+#### 软件架构
+软件架构说明：Any CPU
+适用于Windows操作系统（Windows7及以上版本）
+【需安装.NET 6.0 运行库】
+#### 安装教程
+
+1.  安装.NET 6.0 运行库（若已安装则跳过）
+2.  运行程序
+3.  xxxx
+
+#### 使用说明
+
+1.  
+2.  xxxx
+3.  xxxx
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+
+#### 特技
+
+1.  使用
+2.  YFHXYA 官方团队 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)
+3.  你可以 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/) 这个地址来了解 Gitee 上的优秀开源项目
+4.  YFHXYA 官方提供的使用手册</description>
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="17432">
+      <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6H3VH2YaGUwSorMhoDJG5laWK2oA5KNJ8/Rcg2Y+TUE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DocumentFormat.OpenXml.dll" size="6032784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MW21m+a5bNVeWc7pfDKorAq883cibyRI1Ntwye99kAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Logo.ico" size="16577">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Sx4CFRNeYLBcCYAzgs3klegqzbUBiDOostFiC/d0lD0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YFHXYA.deps.json" size="1507">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZPRJeOLEKlORcZh+dAJCN9dhinD032Qo9NOvA06yL5g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YFHXYA.dll" size="353816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BR5dRcI1CFfRXys9KXLfGvwfWCo0i5VWgG9kuFGALPA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YFHXYA.dll.config" size="778">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QJij6/kAQtb/pSKqG2T+gxBmhZ2zu5yJd3rybv2Sg0M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YFHXYA.exe" size="167448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z9N6Tiq3zLQUJo0lZFSWACCBxzc3ZhOs6P/lpUldrOo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YFHXYA.runtimeconfig.json" size="372">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsoPDHAHCqg7tgnkt0mybctECXhDJgMnJjlHIiJKCYo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=YFHXYA, E=yfuxya@qq.com, C=China, S=浙江省" issuerKeyHash="3b6f596e1e1724d2da193c468464eb6a52987d34" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>dsP+qnwzK/eWuImLw4nh1a2Z6dc=</DigestValue></Reference></SignedInfo><SignatureValue>y0PoNwPsjvuR8Xm8KoNixVHpM0YS4ly40Kfkgm/32Lr7YOdOnHbQRdtyuz6OyNRT0YdzV/jtWjs37VKDhW9QO19ERKTG0OyveVYQxOkY4GZCwpD9wl4azyV1vGTUkFWV8JcdxEgZwBA8WF3lGO4EqASGnf2zg9MuY1f3fIuyjsEc3o6YMYMNr/8QBnfugEMEj3B5M1rRe5iPDg3xmM+YhTC8NiRZah2aFMG7yKxscLN2jWQp6ohAH51U8ADqSm5/W15b/ktVdE6JFu4ke5HW6maU8l34J+QqDyK8kQYIw/oWWeb1Z4RqZIYQ6k2GiCJCDVyRB8Q/nBPArrGOSFLnqQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d7e999add5e189c38b89b896f72b337caafec376" Description="" Url=""><as:assemblyIdentity name="YFHXYA.exe" version="1.0.0.0" publicKeyToken="642a583bee0577f2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=YFHXYA, E=yfuxya@qq.com, C=China, S=浙江省</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Bz8ANY4NiJTaFHswpwYUlK0aycY=</DigestValue></Reference></SignedInfo><SignatureValue>qsqpXwvjae2G3gfQf4mt9H8q3f4zRZK+F3880tv1pVNXvX/7s/wjQu5FdJo627rihooxYMCaxR10fYcj5vs1ghTTgUq1DpJ/QSVSLKaxOKBV/U6yrNhIxAxATD6G2ZdL/D+QNyrwNk45fOn1kow4MfvuYCNxvYU7Z6HLeJezIQBdBhJ+dRrRRY4RCbjMMhaYUTV5BFo44isFyHBpaM1SqTHE1vC3AuES9ZN34aP5fv1Ed8qBGHrr/D/noFInRJx/Ganf2ZEZdV23qYud+reB50mDBkRD6JGHYpOh5fasOFXgmwX3UwLWcNtU5+TBP+L655ytETOa/DNkiI3AwCF79A==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDrDCCApigAwIBAgIQff4KEkU/1Y1Nrvjx65SPbTAJBgUrDgMCHQUAMFAxDzANBgNVBAgeBm1ZbF93ATEOMAwGA1UEBhMFQ2hpbmExHDAaBgkqhkiG9w0BCQEWDXlmdXh5YUBxcS5jb20xDzANBgNVBAMTBllGSFhZQTAgFw0yMjEyMTQwNDI5MzFaGA8yMTg4MTIzMDE2MDAwMFowUDEPMA0GA1UECB4GbVlsX3cBMQ4wDAYDVQQGEwVDaGluYTEcMBoGCSqGSIb3DQEJARYNeWZ1eHlhQHFxLmNvbTEPMA0GA1UEAxMGWUZIWFlBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQIDAQABo4GHMIGEMIGBBgNVHQEEejB4gBAvss4QJHfOgudY/Tjwr3MSoVIwUDEPMA0GA1UECB4GbVlsX3cBMQ4wDAYDVQQGEwVDaGluYTEcMBoGCSqGSIb3DQEJARYNeWZ1eHlhQHFxLmNvbTEPMA0GA1UEAxMGWUZIWFlBghB9/goSRT/VjU2u+PHrlI9tMAkGBSsOAwIdBQADggEBAFrIJxOMQIeHeVeOsP3xD2nt0d0JakkwPtFMfb0k2HYK8XBt6lEBta02XKty0ZD+2QhMp+fiFr+mqOhGCc8h4xWc4kEOl0OxBdjkxZKrJ6lQp4AWaHZiKyzNcElzdt0kTzRy7Ov2Ow8gYvr67N0obUq26kEH5FwZjFKhWiqW55jmNfLd35If6PCEs0bqB6hCLOV/qh+lYbD976mqzCH4rLy1F/NGzeAEIiCBIqYF5Hf6Sg0FXkC4SUNFRi0xcecrqjQgpgn1hXJPdrpoTqK9wA91BqyhPVbC1itcGxeUAUfv/5oBzhZ3ow9PDScnqUd+8iEz7gvFDko4Kwk/31NDrG0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,106 @@
+.top{
+position: fixed;
+margin:0 auto;
+z-index:1;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 45px;
+line-height: 45px;
+text-align: center;
+background-color: #F0F0F0;
+color: #000000;
+
+}
+
+.tophome{
+position: fixed;
+margin:0 auto;
+z-index:1;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 60px;
+line-height: 60px;
+text-align: center;
+background-color: #F0F0F0;
+color: #000000;
+
+}
+.topA1 {
+    width: 35px;
+    height: 35px;
+    top: 2.5px;
+    left: 3.8px;
+    border-radius: 1px;
+    position: fixed;
+    margin: 1px auto;
+    z-index: 2;
+    border: 1px solid #f5f5f5;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-image: url('../picture/Logo.svg');
+}
+.topA2 {
+        
+        top:0px;
+        border-radius: 1px;
+        position: fixed;margin:0.5px auto;z-index:2;
+        left: 48px;
+      border: 1px solid #f5f5f5;
+        height: 40px;
+        line-height: 40px;
+ }
+ 
+ .topB1 {
+        font-family:"行楷";
+        font-size:60%;
+        top:0px;
+        border-radius: 1px;
+        position: fixed;margin:0 auto;z-index:2;
+        left: 188px;
+        
+        height: 40px;
+        line-height: 40px;
+        transition: all 0.2s linear;/* 动作持续2秒 */
+
+ }
+ .topB1:hover{ 
+
+    transform: scale(1.8);/* 
+    放大1.8倍
+    */
+    transition: all 0.2s linear;/* 动作持续2秒 */
+
+}
+
+ .topB2 {
+        font-family:"行楷";
+        font-size:60%;
+        top:0px;
+        border-radius: 1px;
+        position: fixed;margin:0 auto;z-index:2;
+        left: 258px;
+        
+        height: 40px;
+        line-height: 40px;
+        transition: all 0.2s linear;/* 动作持续2秒 */
+
+ }
+ .topB2:hover{ 
+
+    transform: scale(1.8);/* 
+    放大1.8倍
+    */
+    transition: all 0.2s linear;/* 动作持续2秒 */
+
+}
+
+.topAnnounce{
+    position: fixed;
+margin:42px auto;
+z-index:3;
+top: 0px;
+left: 0px;
+width: 100%;
+}

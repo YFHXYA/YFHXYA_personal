@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="YFHXYA.application" version="1.0.0.2" publicKeyToken="642a583bee0577f2" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Yujianhao" co.v1:suiteName="YFHXYA" asmv2:product="YFHXYA" asmv2:supportUrl="http://www.yfhxya.top/" xmlns="urn:schemas-microsoft-com:asm.v1"># YFHXYA-凤凰学业
+#### 介绍
+{**以下是 YFHXYA 平台说明简介**
+企业项目请看 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)}
+
+#### 软件架构
+软件架构说明：Any CPU
+适用于Windows操作系统（Windows7及以上版本）
+【需安装.NET 6.0 运行库】
+#### 安装教程
+
+1.  安装.NET 6.0 运行库（若已安装则跳过）
+2.  运行程序
+3.  xxxx
+
+#### 使用说明
+
+1.  
+2.  xxxx
+3.  xxxx
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+
+#### 特技
+
+1.  使用
+2.  YFHXYA 官方团队 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)
+3.  你可以 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/) 这个地址来了解 Gitee 上的优秀开源项目
+4.  YFHXYA 官方提供的使用手册</description>
+  <deployment install="true" mapFileExtensions="true" minimumRequiredVersion="1.0.0.1" trustURLParameters="true" co.v1:createDesktopShortcut="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="https://www.yfhxya.top/VB.NET/YFHXYA.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\YFHXYA_1_0_0_2\YFHXYA.dll.manifest" size="11810">
+      <assemblyIdentity name="YFHXYA.exe" version="1.0.0.2" publicKeyToken="642a583bee0577f2" language="neutral" processorArchitecture="msil" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Bg9hdFU8czOsQ9lCrz5ScHXJkozLKDuP1VufEjidqw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=YFHXYA, E=yfuxya@qq.com, C=China, S=浙江省" issuerKeyHash="3b6f596e1e1724d2da193c468464eb6a52987d34" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>R/t7svQdXahtClT9/15zCnr+T2Q=</DigestValue></Reference></SignedInfo><SignatureValue>uoPa34pcvk3VEsjYj7Jipcivi0Fvp6IV9w67o3lrshuCYLSC1xdBIkiOfWMJXPTtG46LHzAhYMBQD5CT9MQGBKFtmIQNzFoRwunQq+s6tC/p0kXygS3loCou2uVBA8xE2TjH4lipyMcWH6ypeiAgoj9SuP7KRRG3ohpyLKcybw5cjrCWGIMQYoo5A7wtjXr88KC2nbl9vEdtHxEPaLY2mta6VMVGQxlme8K4SQPshHJGkx9GGkEgu5lvRWU0dkaLN3FDZAAK+tMSkKyEAemvle0jYvy2b2XW46kgyMdM8cyYBj/INWYQKozmZvCL0gK9sXx8egFjIyr6VZ1vSNMUtw==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="644ffe7a0a735efffd540a6da85d1df4b27bfb47" Description="" Url=""><as:assemblyIdentity name="YFHXYA.application" version="1.0.0.2" publicKeyToken="642a583bee0577f2" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=YFHXYA, E=yfuxya@qq.com, C=China, S=浙江省</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UXKc8bP9I0XDoam5wCc8Pxdwi94=</DigestValue></Reference></SignedInfo><SignatureValue>vHEyriy4aS1GvW94gv2x7iBusNc60tdxQ3kN6Iyb1cTbSqBBvrfB1qOHXAG/F63HaxYTyL8FwULdDPkEWB7HajRN2rMhGI/XsXX8yAGJa/p23NJ5n6fY4MwyvPfLO+InG8JblXQQX/VckYQhQ+0RO2KhhWw3LG/GYo9n0WOVlaZZF1BaRhxXRXjnhO42XMefVnQqKv1PPYiRZpvwoWb/eozKFfQt/9mKW2nOJJ8d9lm+PG/QRyUps05amhcpcpaQKa9WaGT6pef0aBm89lIOtbCjBTjtk9TqHzVtxOFkaOSxEfRPvPRCI9Fr7+gnZIDpcUHwRgLBoVfRc/wM7RgWWw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDrDCCApigAwIBAgIQff4KEkU/1Y1Nrvjx65SPbTAJBgUrDgMCHQUAMFAxDzANBgNVBAgeBm1ZbF93ATEOMAwGA1UEBhMFQ2hpbmExHDAaBgkqhkiG9w0BCQEWDXlmdXh5YUBxcS5jb20xDzANBgNVBAMTBllGSFhZQTAgFw0yMjEyMTQwNDI5MzFaGA8yMTg4MTIzMDE2MDAwMFowUDEPMA0GA1UECB4GbVlsX3cBMQ4wDAYDVQQGEwVDaGluYTEcMBoGCSqGSIb3DQEJARYNeWZ1eHlhQHFxLmNvbTEPMA0GA1UEAxMGWUZIWFlBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9cv70HZF3RjY3IeUT5Dh2KwwkVj5IOqGeAqmyfQhZrKTPSxv0kzK7Ql6ZYxRcI9d79y18/+R4QVGLJS3JmDge+7s12K69/f5zRJVkUBbtowLTbexmSogeePxHZjgmfT+zDOU8YdhPes9Y+lnjQBVDizrgrxLXseDgu74b+e//nj6slrUjtgom2mVDnmH1uzZx/E9AddcfqmJLejKGA29zbvVHBu2MkVxebeasSu6BEDvn3bhHJeASASxGsMcHVb1Afb54c07Rz/oKa58b2Dw8qmIHbp122ShYln/3OumjAcG9AR+F/UfXfHBDkcoOHLpmnlh0951tk6i7SN18yVjbQIDAQABo4GHMIGEMIGBBgNVHQEEejB4gBAvss4QJHfOgudY/Tjwr3MSoVIwUDEPMA0GA1UECB4GbVlsX3cBMQ4wDAYDVQQGEwVDaGluYTEcMBoGCSqGSIb3DQEJARYNeWZ1eHlhQHFxLmNvbTEPMA0GA1UEAxMGWUZIWFlBghB9/goSRT/VjU2u+PHrlI9tMAkGBSsOAwIdBQADggEBAFrIJxOMQIeHeVeOsP3xD2nt0d0JakkwPtFMfb0k2HYK8XBt6lEBta02XKty0ZD+2QhMp+fiFr+mqOhGCc8h4xWc4kEOl0OxBdjkxZKrJ6lQp4AWaHZiKyzNcElzdt0kTzRy7Ov2Ow8gYvr67N0obUq26kEH5FwZjFKhWiqW55jmNfLd35If6PCEs0bqB6hCLOV/qh+lYbD976mqzCH4rLy1F/NGzeAEIiCBIqYF5Hf6Sg0FXkC4SUNFRi0xcecrqjQgpgn1hXJPdrpoTqK9wA91BqyhPVbC1itcGxeUAUfv/5oBzhZ3ow9PDScnqUd+8iEz7gvFDko4Kwk/31NDrG0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

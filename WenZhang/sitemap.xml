@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- XML文件需以utf-8编码-->
+
+  <urlset>
+
+    <!--必填-->
+
+    <url>
+
+        <!--必填,定义某一个链接的入口，每一条数据必须要用<url>和</url>来标示 -->
+
+        <loc>https://www.yfhxya.top/WenZhang/Yujianhao/%E7%8F%AD%E7%BA%A7%E5%86%85%E6%88%98.html</loc>
+
+        <!--必填,URL长度限制在256字节内-->
+
+        <lastmod>2022-03-31</lastmod>
+
+        <!--更新时间标签，非必填，用来表示最后更新时间-->
+
+        <changefreq>hourly</changefreq>
+
+        <!--更新频率标签，非必填，用来告知引擎页面的更新频率 -->
+
+        <priority>0.6</priority>
+
+        <!--优先级标签，优先级值0.0-1.0，用来告知引擎该条url的优先级-->
+
+     </url>
+
+     <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%8E%E6%AE%87%E7%9A%84%E4%B8%93%E6%A0%8F/menu.html?v1.0.0</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+
+    </url>
+
+         <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%8E%E6%AE%87%E7%9A%84%E4%B8%93%E6%A0%8F/%E4%BC%AA%E8%AF%97%E6%96%87.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.6</priority>
+
+    </url>
+    
+         <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%8E%E6%AE%87%E7%9A%84%E4%B8%93%E6%A0%8F/%E5%85%B3%E4%BA%8E%E7%81%B0%E5%8E%9F%E5%93%80.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.6</priority>
+
+    </url>
+    
+         <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/Yujianhao/menu.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+        
+        <priority>0.7</priority>
+
+    </url>
+    
+             <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%9C%E9%B9%83%E7%9A%84%E4%B8%93%E6%A0%8F/menu.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+
+    </url>
+    
+             <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%9C%E9%B9%83%E7%9A%84%E4%B8%93%E6%A0%8F/%E8%87%B4%E5%90%8C%E5%AD%A6%E4%BB%AC.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.6</priority>
+
+    </url>
+    
+             <url>
+
+        <loc>https://www.yfhxya.top/WenZhang/%E6%9D%9C%E9%B9%83%E7%9A%84%E4%B8%93%E6%A0%8F/%E5%BA%8F%E8%A8%80.html</loc>
+
+        <lastmod>2022-03-31</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.6</priority>
+
+    </url>
+    
+  </urlset>

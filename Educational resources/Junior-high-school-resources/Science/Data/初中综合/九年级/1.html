@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv='content-language' content='zh-cn'>
+    <link rel="stylesheet" type="text/css" href="http://www.yfhxya.top/.模板/top.css?v=1.0.1">
+    <link rel="stylesheet" type="text/css" href="http://www.yfhxya.top/.模板/black.css?v=1.0.1">
+    <link rel="stylesheet" type="text/css" href="http://www.yfhxya.top/.模板/download.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    <meta charset="UTF-8">
+        <meta name="Author" contect="Yujianhao">
+    <meta name="keywords" content="凤凰学业科学学习资源，yfhxya，凤凰学业,YFHXYA,凤凰学业科学,凤凰学业科学八年级"/>
+    <meta name="description" content="本网站提供免费的学习资源与文章，欢迎大家踊跃投稿，感谢大家的支持！" />
+    <title>初中九年级科学知识梳理·凤凰学业(www.yfhxya.top)</title>
+    
+    <style>
+    body{
+        
+        width:100%;
+    }
+        .loading {position: fixed;width:200px;height:200px;position:relative;margin:50px auto;border:1px solid #f90;border-radius:50%;}
+        .dot {width:100%;;height:100%;animation:rond .8s infinite;-webkit-animation:rond .8s infinite;}
+        .dot:after {position: fixed;width:10px;height:10px;position:absolute;top:-5px;left:90px;content:"";display:table;background-color:#f50;border-radius:50%;}
+        .num {position: fixed;width:100%;height:100%;position:absolute;top:0;left:0;line-height:200px;text-align:center;font-size:20px;color:#f60;}
+        @keyframes rond {
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(360deg);}
+        }
+        @-webkit-keyframes rond {
+            0% {-webkit-transform:rotate(0deg);}
+            100% {-webkit-transform:rotate(360deg);}
+        }
+
+        .photo {width:100%;margin:0 auto;display:none;text-align:center;}
+        .photo img {width:100%;margin:0 5px;border:1px solid #ddd;border-radius:5px;}
+        
+        img
+{
+pointer-events:none; 
+}
+    </style>
+    
+</head>
+<body>
+
+ <div id="topAnchor" class="bticon" onclick="window.location.href=('../menu.html');"></div>
+<h1 class="top">初中九年级科学知识梳理</h1><br><br><br>
+<h3 class="download"></h3>
+
+<div class="loading">
+    <div class="dot"></div>
+    <div class="num">0%</div>
+</div>
+
+<div class="photo"></div>
+
+
+<script>
+
+    var loading = document.querySelector(".loading"),
+            num = document.querySelector(".num"),
+            photo = document.querySelector(".photo"),
+            imgs = [
+                    
+                    "img/B.jpg",
+                    "img/A.jpg",
+                    "img/17.jpg",
+                    "img/16.jpg",
+                    "img/15.jpg",
+                    "img/14.jpg",
+                    "img/13.jpg",
+                    "img/12.jpg",
+                    "img/11.jpg",
+                    "img/10.jpg",
+                    "img/09.jpg",
+                    "img/08.jpg",
+                    "img/07.jpg",
+                    "img/06.jpg",
+                    "img/05.jpg",
+                    "img/04.jpg",
+                    "img/03.jpg",
+                    "img/02.jpg",
+                    "img/01.jpg"
+                    
+            ],
+            len = imgs.length;
+
+    for (var i=0; i<len; i++){
+        var img = new Image();
+        img.src = imgs[i];
+        img.onload = function () {
+            i--;
+            num.innerHTML = ((len-i) * 100 / len) + "%";
+            photo.innerHTML += "<img src='"+imgs[i]+"'alt='初中九年级科学知识梳理'>";
+            if (i == 0){
+                photo.style.display = "block";
+                loading.style.display = "none";
+            }
+        };
+    }
+
+</script>
+<script>
+(function(b,a,e,h,f,c,g,s){b[h]=b[h]||function(){(b[h].c=b[h].c||[]).push(arguments)};
+b[h].s=!!c;g=a.getElementsByTagName(e)[0];s=a.createElement(e);
+s.src="//s.union.360.cn/"+f+".js";s.defer=!0;s.async=!0;g.parentNode.insertBefore(s,g)
+})(window,document,"script","_qha",444948,false);
+</script>
+</body>
+</html>

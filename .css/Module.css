@@ -1,0 +1,15 @@
+body{
+            background-color: 	#3C3C3C;
+       }
+           .container {
+            width: 60%;
+            margin: 5% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }.mokuaiA{
+            text-align: center;
+            background-color: 	#3C3C3C;
+            color:	#FFFFFF;
+            font-size:30px;
+        }
