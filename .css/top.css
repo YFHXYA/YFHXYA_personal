@@ -113,7 +113,7 @@
         transform: scale(1.8); /* 
     放大1.8倍
     */
-        transition: all 0.2s linear; /* 动作持续2秒 */
+        transition: all 0.21s linear; /* 动作持续2秒 */
     }
 
 .topAnnounce {
