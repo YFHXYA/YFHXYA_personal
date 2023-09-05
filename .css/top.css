@@ -116,6 +116,27 @@
         transition: all 0.21s linear; /* 动作持续2秒 */
     }
 
+.topB4 {
+    font-family: "行楷";
+    font-size: 60%;
+    top: 0px;
+    border-radius: 1px;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 2;
+    left: 398px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.2s linear; /* 动作持续2秒 */
+}
+
+    .topB4:hover {
+        transform: scale(1.8); /* 
+    放大1.8倍
+    */
+        transition: all 0.21s linear; /* 动作持续2秒 */
+    }
+
 .topAnnounce {
     position: fixed;
     margin: 42px auto;
