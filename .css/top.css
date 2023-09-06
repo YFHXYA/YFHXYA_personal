@@ -144,7 +144,7 @@
     position: fixed;
     margin: 0 auto;
     z-index: 2;
-    left: 97%;
+    left: 95%;
     height: 40px;
     line-height: 40px;
     transition: all 0.2s linear; /* 动作持续2秒 */
