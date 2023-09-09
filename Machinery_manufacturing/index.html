@@ -3,13 +3,12 @@
 <html>
 
 <head>
+
     <meta name="viewport" content=" maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="../.css/top.css?v=1.0.34">
-    <link rel="stylesheet" type="text/js" href="../.js/black.js?v=1.0.0">
-    <link rel="stylesheet" type="text/js" href="../.js/htmlA.js?v=1.0.0">
     <link rel="stylesheet" type="text/css" href="../.css/black.css?v=1.0.0">
     <link rel="stylesheet" type="text/css" href="../.css/a.css?v=1.0.0">
-    <link rel="icon" href="img/Logo.ico" type="image/x-icon">
+    <link rel="icon" href="../img/Logo.ico" type="image/x-icon">
     <!--
     <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">-->
     <!--
@@ -17,6 +16,7 @@
     <meta http-equiv='content-language' content='zh-cn'>
     <meta charset="utf-8">
     <!--<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />-->
+    <script type="text/javascript" src="../.js/htmlA.js"></script>
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="Author" contect="Yujianhao">
@@ -68,10 +68,10 @@
     <script>
 
 
-        function jump() {
+        function jump_Fu() {
             window.location.href = "Fundamentals_of_CNC_Processing_Machinery/1_1.html";
         }
-        function jump2() {
+        function jump2_Fu() {
             window.location.href = "Fundamentals_of_CNC_Processing_Machinery/1_2.html";
         }
     </script>
@@ -130,7 +130,7 @@
 </head>
 
 
-<body id="body">
+<body id="body" oncontextmenu="return false" ondragstart="return false">
     <p></p>
 
     <div class="tophome">
@@ -166,8 +166,8 @@
         <ul>
         </ul>
         <br><br>
-        <button id="toggle" onclick=javascript:jump()>1.1  绪论</button> <br><br>
-        <button id="toggle" onclick="">1.2  碳钢</button> <br>
+        <button id="toggle" onclick=javascript:jump_Fu()>1.1  绪论</button> <br><br>
+        <button id="toggle" onclick=javascript:jump2_Fu()>1.2  碳钢</button> <br>
         <div style="text-align:center">
 
         </div>
@@ -183,7 +183,21 @@
         $("#globeA").load("../.html/globe.html");
 
     </script>-->
+    <div class="container">
 
+        <h1>零件测量与质量控制技术</h1>
+        <h3>资料整理（本资料来源于网络非商业用途，仅供学习及复习所用，如有侵权请联系删除）</h3>
+        <br><br>
+        <button id="toggle" onclick=javascript:jump()>1.1  绪论</button> <br><br>
+        <button id="toggle" onclick=javascript:jump2()>1.2  碳钢</button> <br>
+        <ul>
+        </ul>
+        <div style="text-align:center">
+
+        </div>
+    </div>
+    <br>
+    <br>
     <div class="container">
 
         <h1>机械制造基础</h1>
@@ -199,7 +213,7 @@
     <div class="kaiguan">
         <div class="hei" id="anniu"></div>
     </div>
-        <script type="text/javascript" src="../.js/black.js"></script>
+    <script type="text/javascript" src="../.js/black1.js"></script>
 
 
 </body>

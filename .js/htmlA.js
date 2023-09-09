@@ -1,36 +1,21 @@
-// 禁止按F12调试
-document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
-	var e = event || window.event || arguments.callee.caller.arguments[0];
-	if (e && e.keyCode == 123) {
-		mAlert();
-		e.returnValue = false;
-		return (false);
-	}
-}
-
-document.onkeydown =document.onkeyup = document.onkeypress=function(){
-   if(window.event.keyCode == 123) { //123代表的就是F12
-      layer.msg("欢迎光临寒舍，本页面禁止复制，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
-      window.event.returnValue=false;
-      return(false);
-   }
-}
-function mAlert() {
-	alert("感谢使用管理平台，禁止对控制台进行操作！");
-}
-// 防止鼠标右键浏览器‘检查’操作
+var threshold = 160; // 打开控制台的宽或高阈值
+// 每秒检查一次
 setInterval(function () {
-	debugger;
-},1000)
-
-
-//禁止复制
-document.onselectstart=new Function('event.returnValue=false;');
-
-//vent.button==0是点击了鼠标左键，1中间滚轮键，2右键
-document.onmousedown=function(e) {
-      if (event.button==2||event.button==3) {
-         layer.msg("欢迎光临寒舍，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
-         oncontextmenu='return false';
-      }
-};
+    if (window.outerWidth - window.innerWidth > threshold ||
+        window.outerHeight - window.innerHeight > threshold) {
+        // 如果打开控制台，关闭页面
+        if (navigator.userAgent.indexOf('MSIE') > 0) { // close IE
+            if (navigator.userAgent.indexOf('MSIE 6.0') > 0) {
+                window.opener = null;
+                window.close();
+            } else {
+                window.open('', '_top');
+                window.top.close();
+            }
+        } else { // close chrome;It is effective when it is only one.
+            window.opener = null;
+            window.open('', '_self');
+            window.close();
+        }
+    }
+}, 1000);

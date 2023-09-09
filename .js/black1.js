@@ -7,7 +7,7 @@ if (temp == 1) {
     temp = 0;
     body.style.backgroundColor = 'rgb(7, 7, 29)';
     kaiguan.style.border = '2px solid  rgb(11, 243, 81)';
-    body.style.color = 'white';
+    //body.style.color = 'white';
 } else {
     this.className = 'bai';
     temp = 1;
@@ -22,7 +22,7 @@ anniu.addEventListener('click', function () {
         temp = 0;
         kaiguan.style.border = '2px solid  rgb(11, 243, 81)';
         body.style.backgroundColor = 'rgb(7, 7, 29)';
-        body.style.color = 'white';
+        //body.style.color = 'white';
     } else {
         this.className = 'bai';
         temp = 1;
