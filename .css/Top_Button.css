@@ -1,0 +1,19 @@
+.totop {
+    position: fixed;
+    /*    position: absolute;*/
+    top: 90.8%;
+    right: 21px;
+    width: 42px;
+    height: 49px;
+    border: 2.1px solid white;
+    border-radius: 5.1px;
+    cursor: pointer;
+    transition: all 3s;
+    color: white;
+}
+
+.txt {
+    position: absolute;
+    top: 2.1px;
+    left: 4.1px;
+}

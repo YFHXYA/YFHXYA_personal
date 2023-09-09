@@ -1,3 +1,6 @@
+//禁止页面选择以及鼠标右键
+document.oncontextmenu = function () { return false; };
+document.onselectstart = function () { return false; };
 var threshold = 160; // 打开控制台的宽或高阈值
 // 每秒检查一次
 setInterval(function () {
