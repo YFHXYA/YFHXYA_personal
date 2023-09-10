@@ -34,7 +34,7 @@
 
 .bai {
     position: absolute;
-    top: 4.5vh;
+    top: 4.5px;
     left: 3.8px;
     height: 11.8px;
     width: 11px;
@@ -45,7 +45,7 @@
 
 .hei {
     position: absolute;
-    top: 4.5px;
+    top: 4.5rpx;
     right: 3.8px;
     height: 11.8px;
     width: 11px;
