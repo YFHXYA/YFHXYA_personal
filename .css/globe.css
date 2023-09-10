@@ -17,8 +17,12 @@ body {
     }
 }
 .mainbox{
-    width: 65%;
-    height: 65%;
+    position: fixed;
+
+    width: 45%;
+    height: 45%;
+        top: 50%;
+    left: 50%;
 }
 .big {
     position: fixed;
