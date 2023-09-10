@@ -45,10 +45,10 @@
 
 .hei {
     position: absolute;
-    top: 4.5px;
+    top: 50%;
     right: 3.8px;
     height: 11.8px;
-    width: 11.8px;
+    width: 11px;
     background-color: rgb(11, 243, 81);
     border-radius: 50%;
     transition: all 1s;
