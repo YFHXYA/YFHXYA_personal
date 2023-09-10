@@ -22,7 +22,7 @@
 .kaiguan {
     position: fixed;
     /*    position: absolute;*/
-    bottom: 3.3vh;
+    bottom: 3.3rpx;
     right: 21px;
     width: 40px;
     height: 20px;
