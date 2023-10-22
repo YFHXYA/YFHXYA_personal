@@ -1,0 +1,37 @@
+.title {
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 4.5px
+}
+
+.title2 {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 3.5px
+}
+
+.title3 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3.5px
+}
+
+
+.content {
+    font-weight: bold;
+    font-size: 21px;
+    padding-left: 4.35em;
+    /*            line-height: 3ex;*/
+    line-height: 2rem;
+    letter-spacing: 3px
+}
+.container {
+    opacity: 0.85;
+    width: 60%;
+    margin: 4.8% auto 0;
+    background-color: #f0f0f0;
+    padding: 2% 5%;
+    border-radius: 10px;
+    font-size: 1.0rem;
+    line-height: 2rem;
+}
