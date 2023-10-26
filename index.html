@@ -64,14 +64,30 @@
     <meta name="baidu-site-verification" content="code-rtc0JDsLVJ" />-->
     <title>凤凰学业-主页</title>
 
-    <style type="text/css">
-
+    <style>
+        function jump1() {
+            window.location.href = "Machinery_manufacturing/index.html";
+        }
+        function jump2() {
+            window.location.href = "QXXC/index.html";//"../404.html";//"Fundamentals_of_CNC_Processing_Machinery/1_1.html";
+        }
+        function jump3() {
+            window.location.href = "Distributed_Computing/index.html";
+        }
         h3 {
             font-size: 66px;
             color: #eee;
             /*            text-align: center;
             padding-top: 21%;*/
             font-weight: normal;
+        }
+		 .container1 { opacity: 0.85; width: 40%; margin: 4.8% auto 0; background-color: #f0f0f0; padding: 2% 5%; border-radius: 10px;
+		font-size: 1.0rem; line-height: 2rem; } .container2 { opacity: 0.85; width: 40%; margin: 4.8% auto 0; background-color: #f0f0f0;
+		padding: 2% 5%; border-radius: 10px; font-size: 1.0rem; line-height: 2rem; }.container3 { opacity: 0.85; width: 80%; margin:
+		4.8% auto 0; background-color: #f0f0f0; padding: 2% 5%; border-radius: 10px; font-size: 1.0rem; line-height: 2rem; }
+        .buttontop{
+            width: 50%;
+            height:50px
         }
     </style>
     <!--<script>
@@ -159,7 +175,49 @@ var _hmt = _hmt || [];
             <p style="color: #FFFFFF">关于 - 帮助</p>
         </a>
     </div>-->
+    <img galleryimg="no"> <!--隐去浏览器中当鼠标移到图片上跳出的工具栏 -->
 
+    <div class="container1">
+
+        <h1>机械制造</h1>
+        <h3>资料整理，包括机械制造基础、数控加工机械基础、CAD等板块</h3>
+        <ul>
+        </ul>
+        <br>
+        <button class="buttontop" id="toggle" onclick=javascript:jump1()>访问   Access</button> <br>
+        <div style="text-align:center">
+
+        </div>
+        <!-- <br> -->
+    </div>
+    &emsp;
+    <div class="container2">
+
+        <h1>青协宣传</h1>
+        <h3>教程整理，包括HTML制作公众号、第三方编辑器制作公众号等板块</h3>
+        <ul>
+        </ul>
+        <br>
+        <button class="buttontop" id="toggle" onclick=javascript:jump2()>访问   Access</button> <br>
+        <div style="text-align:center">
+
+        </div>
+        <!-- <br> -->
+    </div>
+    <div class="container3">
+
+        <h1>分布式计算</h1>
+        <h3></h3>
+        <ul>
+        </ul>
+        <br>
+        <button class="buttontop" id="toggle" onclick=javascript:jump3()>访问   Access</button> <br>
+
+        <div style="text-align:center">
+
+        </div>
+        <br>
+    </div>
     <script type="text/javascript" src=".js/htmlA.js"></script>
 
 
