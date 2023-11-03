@@ -62,57 +62,83 @@
     <!--<meta name="360-site-verification" content="7ec816d3b856183ae88d6d17b417452e" />
     <meta name="baidu-site-verification" content="code-rtc0JDsLVJ" />-->
     <title>分布式计算</title>
-
-    <style type="text/css">
-        
-
-
-
-        a:link {
-            color: blue;
-        }
-
-        a:visited {
-            color: black;
-        }
-
-        a:hover {
-            color: pink;
-        }
-
-        a:active {
-            color: #ccc;
-        }
-
-        /*        body {
-                    background-attachment: fixed;
-                    background-image: url('picture/background.jpg');
-                    background-size: 100%;
-                }
-        */
-        .container {
-            opacity: 0.88;
-            width: 60%;
-            margin: 4.8% auto 0;
-            background-color: #f0f0f0;
-            padding: 2% 5%;
-            border-radius: 10px;
-            font-size: 1.0rem;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-            ul li {
-                line-height: 2.3
-            }
-
-        p {
-            color: #20a53a;
-            text-align: center;
-        }
-    </style>
+<script>
+	//图片懒加载解决方案 解决图片问题
+  window.onload = function(){
+    let imgs=document.querySelectorAll('img[src]');
+    let imgLen=imgs.length;
+    console.log(imgLen);
+    var num=0;
+    for(var i=0;i<imgs.length;i++){
+      !function(index){
+        var img=new Image(),u=imgs[index].getAttribute('src');
+        img.onload=function(){
+          num++;
+          imgs[index].src=u;
+          if(num==imgLen){
+            //加载完了，把布局展示出来
+            document.getElementById("root").style.display = 'flex'
+          }
+        };
+        img.src=u;
+      }(i);
+    }
+  };
+</script>
+	<style>
+		#root {
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			display: none; //首先布局不显示出来
+			flex-direction: column;
+		}
+	
+		a:link {
+			color: blue;
+		}
+	
+		a:visited {
+			color: black;
+		}
+	
+		a:hover {
+			color: pink;
+		}
+	
+		a:active {
+			color: #ccc;
+		}
+	
+		/*        body {
+	                    background-attachment: fixed;
+	                    background-image: url('picture/background.jpg');
+	                    background-size: 100%;
+	                }
+	        */
+		.container {
+			opacity: 0.88;
+			width: 60%;
+			margin: 4.8% auto 0;
+			background-color: #f0f0f0;
+			padding: 2% 5%;
+			border-radius: 10px;
+			font-size: 1.0rem;
+		}
+	
+		ul {
+			padding-left: 20px;
+		}
+	
+		ul li {
+			line-height: 2.3
+		}
+	
+		p {
+			color: #20a53a;
+			text-align: center;
+		}
+	</style>
     <!--<script>
         (function (b, a, e, h, f, c, g, s) {
             b[h] = b[h] || function () { (b[h].c = b[h].c || []).push(arguments) };
@@ -200,6 +226,7 @@
         <h3>团队名称（YFHXYA）</h3>
         <ul>
         </ul>
+        <div id="root"><img src="picture/Logo.PNG" style="width:80%;margin-top: 2rem;"/></div>
         <div style="text-align:center">
 
         </div>
