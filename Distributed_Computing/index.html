@@ -62,83 +62,136 @@
     <!--<meta name="360-site-verification" content="7ec816d3b856183ae88d6d17b417452e" />
     <meta name="baidu-site-verification" content="code-rtc0JDsLVJ" />-->
     <title>分布式计算</title>
-<script>
-	//图片懒加载解决方案 解决图片问题
-  window.onload = function(){
-    let imgs=document.querySelectorAll('img[src]');
-    let imgLen=imgs.length;
-    console.log(imgLen);
-    var num=0;
-    for(var i=0;i<imgs.length;i++){
-      !function(index){
-        var img=new Image(),u=imgs[index].getAttribute('src');
-        img.onload=function(){
-          num++;
-          imgs[index].src=u;
-          if(num==imgLen){
-            //加载完了，把布局展示出来
-            document.getElementById("root").style.display = 'flex'
-          }
+    <script>
+
+
+        //图片懒加载解决方案 解决图片问题
+        window.onload = function () {
+            let imgs = document.querySelectorAll('img[src]');
+            let imgLen = imgs.length;
+            console.log(imgLen);
+            var num = 0;
+            for (var i = 0; i < imgs.length; i++) {
+                !function (index) {
+                    var img = new Image(), u = imgs[index].getAttribute('src');
+                    img.onload = function () {
+                        num++;
+                        imgs[index].src = u;
+                        if (num == imgLen) {
+                            //加载完了，把布局展示出来
+                            document.getElementById("root").style.display = 'flex'
+                        }
+                    };
+                    img.src = u;
+                }(i);
+            }
         };
-        img.src=u;
-      }(i);
-    }
-  };
-</script>
-	<style>
-		#root {
-			width: 100%;
-			align-items: center;
-			justify-content: center;
-			display: none; //首先布局不显示出来
-			flex-direction: column;
-		}
-	
-		a:link {
-			color: blue;
-		}
-	
-		a:visited {
-			color: black;
-		}
-	
-		a:hover {
-			color: pink;
-		}
-	
-		a:active {
-			color: #ccc;
-		}
-	
-		/*        body {
+    </script>
+    <style>
+        /* @media screen and (min-width: 600px) {
+            #iframe-shrink {
+                margin: 0 auto;
+               
+                transform: scale(0.65);
+                width: 915px;
+                height: 660px;
+            }
+            .iframe-body-sty>#iframe-shrink {
+                margin: 0 auto;
+                
+                transform: scale(0.65);
+                width: 915px;
+                height: 660px;
+            }
+        }
+
+        
+        @media screen and (min-width: 900px) {
+            .container {
+                opacity: 0.88;
+                width: 50%;
+                
+                background-color: #f0f0f0;
+                padding: 2% 5%;
+                border-radius: 10px;
+                font-size: 1.0rem;
+                
+            }
+            #iframe-shrink {
+                
+                transform: scale(0.55);
+                width: 915px;
+                height: 660px;
+            }
+            .iframe-body-sty .iframe-body-sty>#iframe-shrink {
+                
+                transform: scale(0.55);
+                width: 915px;
+                height: 660px;
+            }
+        }
+
+        
+        @media screen and (min-width: 1400px) {
+            #iframe-shrink {
+                
+                transform: scale(0.88);
+                width: 915px;
+                height: 660px;
+            }
+            .iframe-body-sty>#iframe-shrink {
+                
+                transform: scale(0.88);
+                width: 915px;
+                height: 660px;
+            }
+        } */
+        .iframe-body-sty>#iframe-shrink {
+                
+                transform: scale(0.88);
+                width: 915px;
+                height: 660px;
+            }
+        #root {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            /* display: none; 首先布局不显示出来 */
+            display: none;
+            flex-direction: column;
+        }
+
+
+        /*        body {
 	                    background-attachment: fixed;
 	                    background-image: url('picture/background.jpg');
 	                    background-size: 100%;
 	                }
 	        */
-		.container {
-			opacity: 0.88;
-			width: 60%;
-			margin: 4.8% auto 0;
-			background-color: #f0f0f0;
-			padding: 2% 5%;
-			border-radius: 10px;
-			font-size: 1.0rem;
-		}
-	
-		ul {
-			padding-left: 20px;
-		}
-	
-		ul li {
-			line-height: 2.3
-		}
-	
-		p {
-			color: #20a53a;
-			text-align: center;
-		}
-	</style>
+        .container {
+            opacity: 0.88;
+            width: 60%;
+            margin: 4.8% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px;
+            font-size: 1.0rem;
+            margin: 0 auto;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        p {
+            color: #20a53a;
+            text-align: center;
+        }
+    </style>
     <!--<script>
         (function (b, a, e, h, f, c, g, s) {
             b[h] = b[h] || function () { (b[h].c = b[h].c || []).push(arguments) };
@@ -156,18 +209,22 @@
     <div class="tophome">
         <div class="topA1"></div>
         <h2 style="color:black" class="topA2">YFHXYA</h2>
-        <div style="color: black" class="topB1" onclick="window.location.href=('../index.html');"><strong>本站首页</strong></div>
+        <div style="color: black" class="topB1" onclick="window.location.href=('../index.html');"><strong>本站首页</strong>
+        </div>
 
         <!--<div style="color: black" class="topB2" onclick="window.location.href=('../kjj.html');"><strong>网址导航</strong></div>-->
 
-        <div style="color: black" class="topB2" onclick="window.location.href=('../Machinery_manufacturing/index.html');"><strong>机械制造</strong></div>
+        <div style="color: black" class="topB2"
+            onclick="window.location.href=('../Machinery_manufacturing/index.html');"><strong>机械制造</strong></div>
 
-        <div style="color: black" class="topB3" onclick="window.location.href=('index.html');"><strong>分布式计算</strong></div>
+        <div style="color: black" class="topB3" onclick="window.location.href=('index.html');"><strong>分布式计算</strong>
+        </div>
 
 
     </div>
     <div class="topAnnounce">
-        <marquee scollamount="8080" behavior="scroll" bgcolor="#FFFFFF">通知：本网站于2023年8月13日 关闭部分资源界面的开放&emsp;<a href="Update/20230813.html">点击此处查看详情</a></marquee>
+        <marquee scollamount="8080" behavior="scroll" bgcolor="#FFFFFF">通知：本网站于2023年8月13日 关闭部分资源界面的开放&emsp;<a
+                href="../Update/20230813.html">点击此处查看详情</a></marquee>
     </div>
     <!--<script>
         (function () {
@@ -178,36 +235,36 @@
 
     <img galleryimg="no"> <!--隐去浏览器中当鼠标移到图片上跳出的工具栏 -->
     <div class="mainbox">
-    <div class="big">
-        <div class="bigbox">
-            <div class="box">
+        <div class="big">
+            <div class="bigbox">
+                <div class="box">
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="but"></div>
             </div>
-            <div class="but"></div>
+            <div class="fix"></div>
+            <div class="foot"></div>
+            <div class="footer"></div>
         </div>
-        <div class="fix"></div>
-        <div class="foot"></div>
-        <div class="footer"></div>
     </div>
- </div>
     <div class="container">
 
         <h1>World_Community_Grid</h1>
@@ -215,7 +272,9 @@
         <ul>
         </ul>
         <div style="text-align:center">
-            <iframe src="https://www.worldcommunitygrid.org/getDynamicImage.do?teamId=3PV2P09DK2&mnOn=true&stat=1&imageNum=1&rankOn=true&projectsOn=true&special=true&link=2&memberId=1162700" frameborder="0" name="di" scrolling="no" width="450px" height="250px"></iframe>
+            <iframe
+                src="https://www.worldcommunitygrid.org/getDynamicImage.do?teamId=3PV2P09DK2&mnOn=true&stat=1&imageNum=1&rankOn=true&projectsOn=true&special=true&link=2&memberId=1162700"
+                frameborder="0" name="di" scrolling="no" width="450px" height="250px"></iframe>
         </div>
     </div>
     <br>
@@ -224,16 +283,14 @@
 
         <h1>Amicable Numbers</h1>
         <h3>团队名称（YFHXYA）</h3>
-        <ul>
-        </ul>
-				<div style="text-align:center">
-					<iframe src="https://yfhxya_personal.gitee.io/web/Distributed_Computing/Amicable_Numbers.html"
-					 frameborder="0" name="di" scrolling="no" width="910px" height="660px"></iframe>
-				</div>
-        <!-- <div id="root"><img src="../picture/Logo.PNG" style="width:80%;margin-top: 2rem;"/></div> -->
-        <div style="text-align:center">
 
-        </div>
+
+        <!-- <div id="root"><img src="../picture/Logo.PNG" style="width:80%;margin-top: 2rem;"/></div> -->
+        <!-- <div style="text-align:center"> -->
+         <div class="iframe-body-sty" style="overflow: auto;text-align: center;"> 
+                <iframe id="iframe-shrink" src="Amicable_Numbers.html" frameborder="no" scrolling="yes"></iframe>
+            <!-- </div> -->
+        </div> 
     </div>
     <br>
     <br>
@@ -243,10 +300,9 @@
         <h3>团队名称（YFHXYA）</h3>
         <ul>
         </ul>
-				<div style="text-align:center">
-					<iframe src="https://yfhxya_personal.gitee.io/web/Distributed_Computing/Asteroids@home.html"
-					 frameborder="0" name="di" scrolling="no" width="910px" height="660px"></iframe>
-				</div>
+        <div class="iframe-body-sty" style="overflow: auto;text-align: center;">
+            <iframe id="iframe-shrink" src="https://yfhxya_personal.gitee.io/web/Distributed_Computing/Asteroids@home.html" frameborder="0" scrolling="yes" width="910px" height="660px"></iframe>
+        </div>
         <!-- <div id="root"><img src="../picture/Logo.PNG" style="width:80%;margin-top: 2rem;"/></div> -->
         <div style="text-align:center">
 
